@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stability Trust | Ron Stability</title>
+<meta name="description" content="Ron Stability — Digital entrepreneur building income systems with e-commerce, flipping, trading, and AI automation.">
+<style>
+  :root{--bg:#0f1220;--card:#151933;--text:#e9ecff;--muted:#a9b0d9;--accent:#6ee7ff;--accent2:#9bffb0}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;color:var(--text);
+    background:radial-gradient(1200px 800px at 10% 0%, rgba(110,231,255,.08), transparent 60%),
+               radial-gradient(900px 700px at 90% 10%, rgba(155,255,176,.08), transparent 60%),var(--bg);
+    min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:32px 16px}
+  .wrap{width:100%;max-width:880px}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);
+        border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.35);backdrop-filter:blur(6px)}
+  .logo{display:flex;gap:12px;align-items:center}
+  .logo-badge{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+              background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0e1a;font-weight:900;letter-spacing:.5px}
+  .tag{display:inline-block;background:rgba(110,231,255,.12);color:var(--accent);padding:6px 10px;border:1px solid rgba(110,231,255,.35);
+       border-radius:999px;font-size:12px;letter-spacing:.3px}
+  h1{margin:14px 0 8px;font-size:clamp(28px,3.8vw,40px);line-height:1.1}
+  p{color:var(--muted);margin:6px 0 0;font-size:clamp(14px,1.6vw,16px)}
+  .grid{display:grid;gap:18px;margin-top:22px;grid-template-columns:1fr}
+  @media(min-width:760px){.grid{grid-template-columns:1.1fr .9fr}}
+  .panel{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:18px}
+  .panel h2{margin:0 0 6px;font-size:18px}
+  .list{margin:0;padding:0;list-style:none}
+  .list li{margin:8px 0;color:var(--muted)}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .btn{text-decoration:none;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.1);
+       background:#1b2042;color:var(--text);transition:.2s transform,.2s opacity,.2s box-shadow;font-weight:600}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.25)}
+  .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08101b;border:none}
+  .footer{margin-top:18px;color:#8d95c7;font-size:12px;text-align:center}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="card">
+      <div class="logo">
+        <div class="logo-badge">ST</div>
+        <div>
+          <div class="tag">Stability Trust</div>
+          <h1>Ron Stability</h1>
+          <p>Digital entrepreneur focused on <strong>e-commerce</strong>, <strong>flipping</strong>, <strong>trading</strong>, and <strong>AI automation</strong> to build reliable income systems.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <section class="panel">
+          <h2>About</h2>
+          <p>I build simple, scalable systems that turn time and tools into cashflow. Follow along for launches, case studies, and automation drops.</p>
+          <ul class="list">
+            <li>✅ E-commerce brand building & product validation</li>
+            <li>✅ AI automations for content, outreach, and ops</li>
+            <li>✅ Local & online flipping playbooks</li>
+            <li>✅ Trading: risk-managed futures & crypto frameworks <span style="opacity:.8">(education only; not financial advice)</span></li>
+          </ul>
+          <div class="btns">
+            <a class="btn primary" href="mailto:ron.stability@gmail.com?subject=Stability%20Trust%20Inquiry">Contact Ron</a>
+            <a class="btn" href="https://getnicheortrybuying.com" target="_blank" rel="noopener">Shop Link (backup)</a>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Connect</h2>
+          <ul class="list">
+            <li><span class="mono">Email:</span> ron.stability@gmail.com</li>
+            <li><span class="mono">Company:</span> stability.creations@gmail.com</li>
+            <li><span class="mono">YouTube:</span> Unleashed Nightmares • Hacknowledged Minds</li>
+            <li><span class="mono">Instagram:</span> @RonStability (coming soon)</li>
+            <li><span class="mono">TikTok:</span> @RonStability (coming soon)</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer">© <span id="y"></span> Stability Trust — Systemize. Stabilize. Scale. <span style="opacity:.7">A brand of Stability Creations LLC.</span></div>
+    </div>
+  </main>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
