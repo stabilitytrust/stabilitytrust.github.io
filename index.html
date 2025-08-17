@@ -8,18 +8,28 @@
 <style>
   :root{--bg:#0f1220;--card:#151933;--text:#e9ecff;--muted:#a9b0d9;--accent:#6ee7ff;--accent2:#9bffb0}
   *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;color:var(--text);
-    background:radial-gradient(1200px 800px at 10% 0%, rgba(110,231,255,.08), transparent 60%),
-               radial-gradient(900px 700px at 90% 10%, rgba(155,255,176,.08), transparent 60%),var(--bg);
-    min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:32px 16px}
+  body{
+    margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;color:var(--text);
+    background:
+      radial-gradient(1200px 800px at 10% 0%, rgba(110,231,255,.08), transparent 60%),
+      radial-gradient(900px 700px at 90% 10%, rgba(155,255,176,.08), transparent 60%),
+      var(--bg);
+    min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:32px 16px;
+  }
   .wrap{width:100%;max-width:880px}
-  .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);
-        border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.35);backdrop-filter:blur(6px)}
+  .card{
+    background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;padding:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);backdrop-filter:blur(6px)
+  }
   .logo{display:flex;gap:12px;align-items:center}
-  .logo-badge{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
-              background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0e1a;font-weight:900;letter-spacing:.5px}
+  .logo-badge{
+    width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0e1a;font-weight:900;letter-spacing:.5px
+  }
   .tag{display:inline-block;background:rgba(110,231,255,.12);color:var(--accent);padding:6px 10px;border:1px solid rgba(110,231,255,.35);
-       border-radius:999px;font-size:12px;letter-spacing:.3px}
+    border-radius:999px;font-size:12px;letter-spacing:.3px}
   h1{margin:14px 0 8px;font-size:clamp(28px,3.8vw,40px);line-height:1.1}
   p{color:var(--muted);margin:6px 0 0;font-size:clamp(14px,1.6vw,16px)}
   .grid{display:grid;gap:18px;margin-top:22px;grid-template-columns:1fr}
@@ -35,6 +45,7 @@
   .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08101b;border:none}
   .footer{margin-top:18px;color:#8d95c7;font-size:12px;text-align:center}
   .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  a{color:#bfe9ff}
 </style>
 </head>
 <body>
@@ -68,16 +79,19 @@
         <section class="panel">
           <h2>Connect</h2>
           <ul class="list">
-            <li><span class="mono">Email:</span> ron.stability@gmail.com</li>
-            <li><span class="mono">Company:</span> stability.creations@gmail.com</li>
-            <li><span class="mono">YouTube:</span> Unleashed Nightmares • Hacknowledged Minds</li>
+            <li><span class="mono">Email:</span> <a href="mailto:ron.stability@gmail.com">ron.stability@gmail.com</a></li>
+            <li><span class="mono">Company:</span> <a href="mailto:stability.creations@gmail.com">stability.creations@gmail.com</a></li>
+            <li><span class="mono">YouTube:</span>
+              <a href="https://www.youtube.com/@UnleashNightmaresTV" target="_blank" rel="noopener">@UnleashNightmaresTV</a>
+              • Hacknowledged Minds
+            </li>
             <li><span class="mono">Instagram:</span> @RonStability (coming soon)</li>
             <li><span class="mono">TikTok:</span> @RonStability (coming soon)</li>
           </ul>
         </section>
       </div>
 
-      <div class="footer">© <span id="y"></span> Stability Trust — Systemize. Stabilize. Scale. <span style="opacity:.7">A brand of Stability Creations LLC.</span></div>
+      <div class="footer">© <span id="y"></span> Stability Trust — Built on Stability You Can Trust. <span style="opacity:.7">A brand of Stability Creations LLC.</span></div>
     </div>
   </main>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
